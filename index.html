@@ -60,7 +60,31 @@
         }
 
         .subscription-title{
-            font-size: 18px;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .price{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .mouth{
+            font-size: 15px;
+            font-style: italic;
+            margin-left: 15px;
+        }
+
+        .button{
+            width: 100%;
+            padding: 15px 32px;
+            color: #006A6A;
+            background-color: #CCCCCC;
+            font-size: 16px;
+
+            border-radius: 4px;
+            border: none;
         }
     
     </style>
@@ -85,12 +109,13 @@
                     Assinatura mensal:
                 </div>
                 <div>
-                    R$ 99,99 por mêss
+                    <span class="price">R$ 99,99</span>
+                    <span class="mouth">por mês</span>
                 </div>
                 <div>
                     Cancele a qualquer momento.
                 </div>
-                <button>Assine Agora</button>
+                <button class="button">Assine Agora</button>
             </div>
             <div class = "col-2">
                 Coluna 2
