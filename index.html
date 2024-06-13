@@ -15,10 +15,12 @@
             margin: auto;
 
             /* Tamanho fixo margin-top em px*/
+            /*
             margin-top: 250px;
+            */
             /****************/
 
-            /* Tamanho fixo de altura em px */
+            /* Tamanho fixo da largura em px */
             width: 600px;
             /*********************/
 
@@ -102,9 +104,26 @@
             text-align: center;
         }
 
+        /* Quando a largura for menor que 620 px a fonte diminui de 16px para 14px*/
         @media screen and (max-width: 620px){
             html{
                 font-size: 14px;
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .col-1, .col-2{
+                width: 100%;
+
+                /*Incorpora a largura do padding e border na div */
+                box-sizing: border-box;
+            }
+
+            /* Quando a largura for menor que 620 px ela será ajustada para 95% da largura disponível no dispositivo */
+            .container{
+                width: 95%;
             }
         }
     
